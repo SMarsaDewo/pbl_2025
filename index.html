@@ -1,88 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Marina Food - Katalog Makanan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
-    <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-    }
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid container">
+            <a class="navbar-brand fw-bold" href="#home-section">Marina Food</a>
+            <div class="d-flex">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#home-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link scroll-link" href="#kategori-pilihan">Kategori</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link scroll-link" href="#produk-terlaris">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Keranjang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
+    <div class="container py-5">
 
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
+        <section class="text-center mb-5" id="home-section">
+            <div class="mb-4">
+                <img src="assets/sundae.jpeg" alt="Food Icons" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <h2 class="section-title">Makanan Terbaru Musim Ini</h2>
+            <p class="text-muted">Temukan kombinasi terbaik dengan produk pilihan kami yang berkualitas.</p>
+            <a href="#produk-terlaris" class="btn-link-custom fw-bold text-decoration-none scroll-link">>> BELANJA SEKARANG <<</a>
+        </section>
 
-    nav {
-      background: #333;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
+        <hr class="my-5">
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+        <section class="text-center mb-5" id="kategori-pilihan">
+            <h3 class="section-subtitle mb-4">Kategori Pilihan</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="category-item">
+                        <img src="assets/soto-ayam.jpeg" class="img-fluid rounded-circle category-img" alt="Makanan Indonesia">
+                        <p class="mt-3 category-name">Makanan Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="category-item">
+                        <img src="assets/sushi.jpeg" class="img-fluid rounded-circle category-img" alt="Makanan Jepang">
+                        <p class="mt-3 category-name">Makanan Jepang</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="category-item">
+                        <img src="assets/Tteokbokki.jpeg" class="img-fluid rounded-circle category-img" alt="Makanan Korea">
+                        <p class="mt-3 category-name">Makanan Korea</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="category-item">
+                        <img src="assets/spagheti.jpeg" class="img-fluid rounded-circle category-img" alt="Makanan Italia">
+                        <p class="mt-3 category-name">Makanan Italia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    nav a:hover {
-      color: #4CAF50;
-    }
+        <hr class="my-5">
 
-    main {
-      text-align: center;
-      margin-top: 40px;
-    }
+        <section class="text-center mb-5" id="produk-terlaris">
+            <h3 class="section-subtitle mb-4">Produk Terlaris</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-item">
+                        <img src="assets/ice-cream.jpeg" class="img-fluid product-img" alt="Ice Cream">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-item">
+                        <img src="assets/waffle.jpeg" class="img-fluid product-img" alt="Waffle">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-item">
+                        <img src="assets/sundae.jpeg" class="img-fluid product-img" alt="Sundae">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-item">
+                        <img src="assets/cheescake.jpeg" class="img-fluid product-img" alt="Cheesecake">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    main img {
-      max-width: 200px;
-      margin-top: 20px;
-    }
+    </div>
 
-    footer {
-      margin-top: 50px;
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Selamat Datang</h1>
-  </header>
+    <div class="promo-banner py-4 text-center">
+        <div class="container">
+            <h4 class="promo-title">Diskon Akhir Tahun!</h4>
+            <p class="promo-text">Dapatkan potongan harga hingga 50% untuk item tertentu. Terbatas!</p>
+            <a href="#" class="promo-link fw-bold text-decoration-none">>> Lihat Promo <<</a>
+        </div>
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="profile.html">Profile</a>
-    <a href="about.html">About</a>
-    <a href="about.html">Formulir Pendaftaran</a>
-  </nav>
+    <footer class="footer-detail py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-heading">Marina Food</h5>
+                    <p class="footer-desc text-muted small">Toko online tepercaya dengan produk berkualitas dan harga terjangkau.</p>
+                </div>
 
-  <main>
-    <h2>SMGW Logo</h2>
-    <img src="" alt="SMGW Logo">
-  </main>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-heading">Link Cepat</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Beranda Kami</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
 
-  <footer>
-    &copy; pbl 2025.
-  </footer>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-heading">Hubungi Kami</h5>
+                    <p class="small mb-1">Email: wj@marina.com</p>
+                    <p class="small">Telepon: 0812 888 789</p>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-heading">Ikuti Kami</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="copyright-text">&copy; 2025 Marina. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+    document.querySelectorAll('.scroll-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); 
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }
+        });
+    });
+    </script>
+    
 </body>
 </html>
