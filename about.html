@@ -6,26 +6,56 @@
     <title></title>
 </head>
 <body>
+     <h2>Pendaftaran Pelatihan Web Menggunakan Node JS dan React</h2>
+    <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
 
-    <h1>Contact</h1>
     <form>
-        <label>Nama <span style="color:red">*</span></label><br>
-        <input type="text" name="nama" required><br><br>
+        <fieldset>
+            <legend>Data Diri Peserta</legend>
 
-        <label>alamat <span style="color:red">*</span></label><br>
-        <input type="text" name="profesi" required><br><br>
+            <label>Nama Lengkap: <span style="color:red">*</span></label><br>
+            <input type="text" name="nama" required><br><br>
 
-        <label>email <span style="color:red">*</span></label><br>
-        <textarea name="deskripsi" rows="4" cols="40" required></textarea><br><br>
+            <label>Email: <span style="color:red">*</span></label><br>
+            <input type="email" name="email" required><br><br>
 
-        <label>Hobi <span style="color:red">*</span></label><br>
-        <input type="checkbox" name="hobi" value="Coding" required> Coding<br>
-        <input type="checkbox" name="hobi" value="Membaca"> Membaca<br>
-        <input type="checkbox" name="hobi" value="Traveling"> Traveling<br>
-        <input type="checkbox" name="hobi" value="Olahraga"> Olahraga<br><br>
+            <label>Nomor Telepon (WhatsApp): <span style="color:red">*</span></label><br>
+            <input type="tel" name="telepon" required><br><br>
 
-        <button type="submit">Submit</button>
+            <label>Jenis Kelamin: <span style="color:red">*</span></label><br>
+            <input type="radio" name="gender" value="Pria" required> Pria
+            <input type="radio" name="gender" value="Wanita"> Wanita<br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Pilihan Pelatihan</legend>
+
+            <label>Pilih Sesi Pelatihan: <span style="color:red">*</span></label><br>
+            <select name="sesi" required>
+                <option value="">-- Pilih Salah Satu --</option>
+                <option value="sesi1">Sesi 1</option>
+                <option value="sesi2">Sesi 2</option>
+                <option value="sesi3">Sesi 3</option>
+            </select><br><br>
+
+            <label>Sumber Informasi (Boleh pilih lebih dari satu):</label><br>
+            <input type="checkbox" name="info" value="Media Sosial"> Media Sosial<br>
+            <input type="checkbox" name="info" value="Rekomendasi Teman"> Rekomendasi Teman<br>
+            <input type="checkbox" name="info" value="Iklan Online"> Iklan Online<br>
+        </fieldset>
+        <br>
+
+        <label>Catatan Tambahan (Opsional):</label><br>
+        <textarea name="catatan" rows="3" cols="40"></textarea><br><br>
+
+        <button type="submit">Daftar Sekarang</button>
+        <button type="reset">Bersihkan Formulir</button>
     </form>
-  <div>
+
+    <a href="index.html">
+    <button type="button">Kembali</button>
+</a>
+    
 </body>
 </html>
