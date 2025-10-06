@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satria Marsa Dewo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+
+      <aside class="col-md-3 col-lg-2 bg-dark d-flex flex-column align-items-center py-4 min-vh-100 sticky-top">
+        <img src="src/profile.png" alt="Profile" class="profile-img mb-3">
+        <h4 class="text-center">Satria Marsa Dewo</h4>
+        <nav class="nav flex-column text-center w-100">
+          <a class="nav-link" href="#about"><i class="bi bi-person-circle me-2"></i>About</a>
+          <a class="nav-link" href="#skills"><i class="bi bi-lightning me-2"></i>Skills</a>
+          <a class="nav-link" href="#projects"><i class="bi bi-grid-3x3-gap-fill me-2"></i>Projects</a>
+          <a class="nav-link" href="#contact"><i class="bi bi-envelope-fill me-2"></i>Contact</a>
+        </nav>
+      </aside>
+
+      <main class="col-md-9 col-lg-10 p-4 overflow-auto">
+
+        <section class="text-center py-5" id="home">
+          <h1 class="display-5 fw-bold mb-3">👋 Hi, I'm <span class="text-info">Satria Marsa Dewo</span></h1>
+          <p class="lead">A passionate <strong>Web Developer</strong> specializing in <strong>Laravel</strong> & <strong>Vue.js</strong></p>
+          <a href="#projects" class="btn btn-info text-dark mt-3 px-4 py-2 fw-semibold shadow-sm">View My Work</a>
+        </section>
+
+        <section id="about" class="section">
+          <div class="container">
+            <h2 class="section-title"><i class="bi bi-person-fill me-2 text-info"></i>About Me</h2>
+            <p>
+              Halo! Saya <strong>Satria Marsa Dewo</strong>, seorang web developer yang berfokus pada pengembangan backend, integrasi data, serta design architectur. 
+              Saya terbiasa menggunakan <strong>Laravel, Vue, dan Git</strong> untuk membangun aplikasi web modern, efisien, dan mudah dikelola.
+            </p>
+          </div>
+        </section>
+
+        <section id="skills" class="section bg-secondary bg-opacity-10">
+          <div class="container text-center">
+            <h2 class="section-title"><i class="bi bi-gear-fill me-2 text-info"></i>Skills</h2>
+            <div class="row mt-4 gy-4">
+              <div class="col-6 col-md-3"><i class="bi bi-laravel display-6 text-info"></i><p>Laravel</p></div>
+              <div class="col-6 col-md-3"><i class="bi bi-database-fill display-6 text-success"></i><p>MySQL</p></div>
+              <div class="col-6 col-md-3"><i class="bi bi-git display-6 text-danger"></i><p>Git & GitHub</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section">
+          <div class="container">
+            <h2 class="section-title"><i class="bi bi-grid-fill me-2 text-info"></i>Projects</h2>
+            <div class="row mt-4 g-4">
+              <div class="col-md-4">
+                <div class="card bg-dark border-0 shadow-sm h-100">
+                  <img src="https://placehold.co/600x400" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Portfolio Website</h5>
+                    <p class="card-text">Website pribadi menggunakan Laravel + Vue dengan panel admin responsif.</p>
+                    <a href="https://github.com/SMarsaDewo" target="_blank" class="btn btn-outline-info btn-sm">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-dark border-0 shadow-sm h-100">
+                  <img src="https://placehold.co/600x400" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Music API</h5>
+                    <p class="card-text">REST API sederhana dengan Laravel untuk manajemen data musik.</p>
+                    <a href="https://github.com/SMarsaDewo" target="_blank" class="btn btn-outline-info btn-sm">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-dark border-0 shadow-sm h-100">
+                  <img src="https://placehold.co/600x400" class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Admin Dashboard</h5>
+                    <p class="card-text">Dashboard berbasis Blade Template & Filament untuk manajemen data.</p>
+                    <a href="https://github.com/SMarsaDewo" target="_blank" class="btn btn-outline-info btn-sm">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section bg-secondary bg-opacity-10">
+          <div class="container text-center">
+            <h2 class="section-title"><i class="bi bi-chat-left-text-fill me-2 text-info"></i>Contact Me</h2>
+            <p class="mt-3"><i class="bi bi-envelope-fill me-2 text-info"></i> satria@gmail.com</p>
+            <p>
+              <a href="https://github.com/SMarsaDewo" target="_blank" class="text-info text-decoration-none me-3"><i class="bi bi-github"></i></a>
+              <a href="https://linkedin.com/in/satriamarsadewo" target="_blank" class="text-info text-decoration-none"><i class="bi bi-linkedin"></i></a>
+            </p>
+          </div>
+        </section>
+
+        <footer>
+          <p>© 2025 Satria Marsa Dewo.</p>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
